@@ -8,6 +8,7 @@
 <input type="text" name="company" #val/>
 <!-- <button (click)="btn(val)">Submit</button> -->
 <button (click)="submitbuton(val)">Submit</button>
-<app-child [company]=value>{{value}}</app-child>
+<app-child [company]=value *ngIf="status">{{value}}</app-child>
 
-
+<br><br>
+<button (click)='removechild()'>Destroy component</button>

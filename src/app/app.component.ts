@@ -9,8 +9,12 @@ export class AppComponent  {
   name = 'Angular ' + VERSION.major;
 
   value: any;
+  status:boolean = false;
   submitbuton(company){
     this.value=company.value;
+  }
+  removechild(){
+    this.status=false;
   }
 }
 

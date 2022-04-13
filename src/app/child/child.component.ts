@@ -29,6 +29,17 @@ export class ChildComponent implements OnInit, OnChanges {
   ngAfterContentInt(){
     console.log("ngaftercontentinit called");
   }
+  ngAfterContentCheck(){
+    console.log("ngafter conent checked");
+  }
+  //in component when view part initiate then this component call
+  ngAfterViewInt(){
+    console.log("agafterview int called");
+  }
+  //when component initiate it can check if we want some thing execute then we execute
+  ngAfterViewChecked(){
+    console.log("ng after view checked is called");
+  }
 
 }
 
