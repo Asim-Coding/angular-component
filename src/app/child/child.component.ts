@@ -15,7 +15,7 @@ export class ChildComponent implements OnInit, OnChanges {
   
  ngOnChanges(change:SimpleChanges){
    this.mycompany = change.company.currentValue;
-  console.log("ngonchange called"+ change.company.currentValue);
+  console.log("ngonchangecalled" + this.mycompany);
 }
 
   ngOnInit() {
@@ -31,6 +31,10 @@ export class ChildComponent implements OnInit, OnChanges {
   }
 
 }
+
+
+
+
 
 
 
