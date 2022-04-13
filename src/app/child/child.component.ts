@@ -25,9 +25,11 @@ export class ChildComponent implements OnInit, OnChanges {
   ngDoCheck(){
     console.log("ngdocheck called");
   }
+  // after component render when we call something then we use
   ngAfterContentInt(){
     console.log("ngaftercontentinit called");
   }
+
 }
 
 
