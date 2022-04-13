@@ -9,7 +9,7 @@ export class AppComponent  {
   name = 'Angular ' + VERSION.major;
 
   value: any;
-  status:boolean = false;
+  status:boolean = true;
   submitbuton(company){
     this.value=company.value;
   }

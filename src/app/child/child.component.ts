@@ -18,9 +18,11 @@ export class ChildComponent implements OnInit, OnChanges {
   console.log("ngonchangecalled" + this.mycompany);
 }
 
-  ngOnInit() {
+  ngOnInit(){
+  // this.myInterval = setInterval(()=>{
+  // console.log("hi pak");
+  // },1000);
     console.log("ngonInit called");
-  
   }  
   ngDoCheck(){
     console.log("ngdocheck called");
@@ -39,6 +41,11 @@ export class ChildComponent implements OnInit, OnChanges {
   //when component initiate it can check if we want some thing execute then we execute
   ngAfterViewChecked(){
     console.log("ng after view checked is called");
+  }
+  //when we want remove component from dom
+  ngOnDestroy(){
+    // clearInterval(this.myInterval);
+    console.log("ngonDestroy called");
   }
 
 }
